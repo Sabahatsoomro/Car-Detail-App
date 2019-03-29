@@ -8,11 +8,11 @@ This is a simple use case to better understand Flask, Cassandra and Kubernetes. 
 
 The purpose of this collection is to help new Cassandra users better understand Cassandra and to present illustrative use cases.
 
-It makes use of Kubernetes which fetchs the data from cassandra 
+It also makes use of Kubernetes which is an open-source container orchestration system for automating application deployment, scaling, and management. Kubernetes was originally designed by Google, and is now maintained by the Cloud Native Computing Foundation.
 
 It searches for the details of the car passed in the app route and fetches details such as the weight of the car and the number of cylinders it has.
 
-It also makes use of the "https://www.apixu.com/" weather api to display current weather on the homepage.
+It also makes use of the "https://www.apixu.com/" weather api to display current weather of London(you may change it to your city) on the homepage.
 
 ## Libraries and Requirements
 
