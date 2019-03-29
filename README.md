@@ -25,6 +25,13 @@ The first thing to do is install all the prerequisite packages. They can be foun
 To run the app, create a config file with the name config.py and add your api key in it.
 
 ``` apikey='Place_your_api_key_here' ```
+
+## Working
+
+To run the app, run the main app.py file.
+
+``` python app.py ```
+
 		
 ## Docker image is available and you can run using the following command on gcloud:
 ``` docker 
