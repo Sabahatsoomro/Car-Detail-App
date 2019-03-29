@@ -21,6 +21,10 @@ External Libraries used are:
 The first thing to do is install all the prerequisite packages. They can be found in requirements.txt. Here's a simple way to do it from the command line using pip.
 
 ``` $ pip install -r requirements.txt ```
+
+To run the app, create a config file with the name config.py and add your api key in it.
+
+``` apikey='Place_your_api_key_here' ```
 		
 ## Docker image is available and you can run using the following command on gcloud:
 ``` docker 
