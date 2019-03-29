@@ -8,7 +8,7 @@ This is a simple use case to better understand Flask, Cassandra and Kubernetes. 
 
 The purpose of this collection is to help new Cassandra users better understand Cassandra and to present illustrative use cases.
 
-It searches for the details of the car passed in the url.
+It searches for the details of the car passed in the app route and fetches details such as the weight of the car and the number of cylinders it has.
 
 It also makes use of the "https://www.apixu.com/" weather api to display current weather on the homepage.
 
