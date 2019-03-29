@@ -1,3 +1,5 @@
+Import config
+
 from flask import Flask, request
 from cassandra.cluster import Cluster
 
@@ -5,9 +7,17 @@ cluster = Cluster(['cassandra'])
 session = cluster.connect()
 app = Flask(__name__)
 
+apikey=config.apikey
+
 @app.route('/')
 def hello():
-	return('<h1>Car Detail App</h1>')
+	url = 'http://api.apixu.com/v1/current.json?key={}&q=London'.format(apikey)
+	resp = requests.get(url)
+	content = resp.json()
+	temp = (content['current']['temp_c'])
+	print(temp)
+	return('<h1>Car Detail App</h1><br><br> The temperature today is {}</h1>'.format(temp))
+
 
 @app.route('/car/<car>')
 def profile(car):
