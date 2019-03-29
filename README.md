@@ -19,6 +19,7 @@ External Libraries used are:
 - 'flask' (Setting up a web-interface)
 
 The first thing to do is install all the prerequisite packages. They can be found in requirements.txt. Here's a simple way to do it from the command line using pip.
+
 ``` $ pip install -r requirements.txt ```
 		
 ## Docker image is available and you can run using the following command on gcloud:
